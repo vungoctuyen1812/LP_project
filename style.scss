@@ -3,16 +3,15 @@ $tablet-breakpoint: 1024px;
 
 .headerImg{
     &__container{
-        background-image: url('./img/Group\ 6.png');
+        background-image: url('./png/heroImg.png');
         width: 100%;
         height: 38rem;
         display: flex;
         justify-content: center;
-        align-items: center;
-        
+        align-items: center;   
     }
     &__img{
-        width: 100%;
+        width: 95%;
     }
 }
 
@@ -44,62 +43,22 @@ $tablet-breakpoint: 1024px;
             color: #009999;
             height: 12rem;
             width: 20rem;
-            border: 3px solid #009999;
-            position: relative;
-            background-color: #F2F2F2;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-flow: column;
             margin-bottom: 5rem;
-            border-radius: 1rem;
-            & > p {
-                font-size: 1.5rem;
-                font-weight: bold;
-            }
-            &::after{
-                content: "";
-                position: absolute;
-                width: 0;
-                height: 0;
-                border-top: 0px solid #009999;
-                border-bottom: 40px solid transparent;
-                border-right: 30px solid #009999;
-                right: 2rem;
-                bottom: -2.5rem;
-                
-            }
         }
     }
     &__rightCol{
         &--item{
-            color: #009999;
             height: 12rem;
             width: 20rem;
-            border: 3px solid #009999;
-            position: relative;
-            background-color: #F2F2F2;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-flow: column;
             margin-bottom: 5rem;
-            border-radius: 1rem;
-            & > p {
-                font-size: 1.5rem;
-                font-weight: bold;
-            }
-            &::after{
-                content: "";
-                position: absolute;
-                width: 0;
-                height: 0;
-                border-top: 0px solid #009999;
-                border-bottom: 40px solid transparent;
-                border-left: 30px solid #009999;
-                left: 2rem;
-                bottom: -2.5rem;
-            }
         }
     }
     &__desc{
@@ -148,14 +107,15 @@ $tablet-breakpoint: 1024px;
         
     }
     &__icon{
-        
-        height: 15rem;
-        width: 15rem;
-        background-color: #fff;
-        border-radius: 50rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        & > img {
+            height: 15rem;
+            width: 15rem;
+            background-color: #fff;
+            border-radius: 50rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
     &__subTitle{
         font-size: 1.3rem;
@@ -200,26 +160,15 @@ $tablet-breakpoint: 1024px;
             margin-right: 0rem;
         }
         &--icon{
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 13rem;
-            width: 13rem;
-            border-radius: 25rem;
-            background-color: #009999;
-        }
-        &--img1{
-            position: absolute;
-                top: 3rem;
-                left: 3.5rem;
-                z-index: 1;
-        }
-        &--img2{
-            position: absolute;
-                top: 7.5rem;
-                left: 6.5rem;
-                z-index: 2;
+            & > img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                width: 13rem;
+                border-radius: 25rem;
+                background-color: #009999;
+            }
         }
         &--title{
             color: #009999;
@@ -264,10 +213,14 @@ $tablet-breakpoint: 1024px;
     }
     &__item{
         width: calc(33% - 2rem);
+        min-width: 25rem;
         background-color: #E6E6E6;
         padding: 10rem 3rem 1.5rem 3rem;
         margin-bottom: 10rem;
         position: relative;
+        & > img{
+            width: 10rem;
+        }
         &:nth-child(n){
             margin-right: 2rem;
         }
@@ -542,16 +495,10 @@ $tablet-breakpoint: 1024px;
 @media only screen and (max-width: 640px){
     .headerImg{
         &__container{
-            background-image: url('./img/Group\ 6.png');
-            
             height: 20rem;
-            object-fit: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
         &__img{
-            width: 100%;
+            width: 95%;
         }
     }
     .question{
@@ -565,79 +512,28 @@ $tablet-breakpoint: 1024px;
         }
         &__wrapper{
             display: flex;
-            flex-flow: column;
+            flex-flow: row wrap;
             justify-content: space-between;
             align-items: center;
         }
         &__img{
             order: 3;
             & > img {
-                width: 95%;
+                width: 80%;
             }
         }
         &__leftCol{
             order: 1;
             &--item{
-                color: #009999;
-                height: 12rem;
-                width: 20rem;
-                border: 3px solid #009999;
-                position: relative;
-                background-color: #F2F2F2;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-flow: column;
-                margin-bottom: 5rem;
-                border-radius: 1rem;
-                & > p {
-                    font-size: 1.5rem;
-                    font-weight: bold;
-                }
-                &::after{
-                    content: "";
-                    position: absolute;
-                    width: 0;
-                    height: 0;
-                    border-top: 0px solid #009999;
-                    border-bottom: 40px solid transparent;
-                    border-right: 30px solid #009999;
-                    right: 2rem;
-                    bottom: -2.5rem;
-                    
-                }
+                height: 6rem;
+                width: 10rem;
             }
         }
         &__rightCol{
             order: 2;
             &--item{
-                color: #009999;
-                height: 12rem;
-                width: 20rem;
-                border: 3px solid #009999;
-                position: relative;
-                background-color: #F2F2F2;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-flow: column;
-                margin-bottom: 5rem;
-                border-radius: 1rem;
-                & > p {
-                    font-size: 1.5rem;
-                    font-weight: bold;
-                }
-                &::after{
-                    content: "";
-                    position: absolute;
-                    width: 0;
-                    height: 0;
-                    border-top: 0px solid #009999;
-                    border-bottom: 40px solid transparent;
-                    border-left: 30px solid #009999;
-                    left: 2rem;
-                    bottom: -2.5rem;
-                }
+                height: 6rem;
+                width: 10rem;
             }
         }
         &__desc{
@@ -645,7 +541,6 @@ $tablet-breakpoint: 1024px;
             font-size: 1.5rem;
             padding-bottom: 3rem;
             & > img {
-                
                 cursor: pointer;
                 margin: 0 0.5rem;
             }
@@ -816,8 +711,8 @@ $tablet-breakpoint: 1024px;
         }
         &__step{
             position: absolute;
-            height: 8rem;
-            width: 8rem;
+            height: 10rem;
+            width: 10rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1086,16 +981,10 @@ $tablet-breakpoint: 1024px;
 @media only screen and (min-width: 640px) and (max-width: 959px){
     .headerImg{
         &__container{
-            background-image: url('./img/Group\ 6.png');
-            
             height: 20rem;
-            object-fit: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
         &__img{
-            width: 100%;
+            width: 95%;
         }
     }
     .question{
@@ -1122,66 +1011,25 @@ $tablet-breakpoint: 1024px;
             order: 1;
             padding-right: 3rem;
             &--item{
-                color: #009999;
                 height: 12rem;
                 width: 13rem;
-                border: 3px solid #009999;
-                position: relative;
-                background-color: #F2F2F2;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-flow: column;
                 margin-bottom: 5rem;
-                border-radius: 1rem;
-                & > p {
-                    font-size: 1.5rem;
-                    font-weight: bold;
-                }
-                &::after{
-                    content: "";
-                    position: absolute;
-                    width: 0;
-                    height: 0;
-                    border-top: 0px solid #009999;
-                    border-bottom: 40px solid transparent;
-                    border-right: 30px solid #009999;
-                    right: 2rem;
-                    bottom: -2.5rem;
-                    
-                }
             }
         }
         &__rightCol{
             order: 2;
             &--item{
-                color: #009999;
                 height: 12rem;
                 width: 13rem;
-                border: 3px solid #009999;
-                position: relative;
-                background-color: #F2F2F2;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-flow: column;
                 margin-bottom: 5rem;
-                border-radius: 1rem;
-                & > p {
-                    font-size: 1.5rem;
-                    font-weight: bold;
-                }
-                &::after{
-                    content: "";
-                    position: absolute;
-                    width: 0;
-                    height: 0;
-                    border-top: 0px solid #009999;
-                    border-bottom: 40px solid transparent;
-                    border-left: 30px solid #009999;
-                    left: 2rem;
-                    bottom: -2.5rem;
-                }
             }
         }
         &__desc{
@@ -1274,7 +1122,6 @@ $tablet-breakpoint: 1024px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 12rem;
                 width: 12rem;
                 border-radius: 25rem;
                 background-color: #009999;
@@ -1345,7 +1192,7 @@ $tablet-breakpoint: 1024px;
                 margin-right: 0rem;
             }
             &:nth-child(3n){
-                margin-right: 0;
+                margin-right: 0rem;
             }
             &--title{
                 color: #009999;
@@ -1412,6 +1259,7 @@ $tablet-breakpoint: 1024px;
             padding: 2rem 0rem 2rem 0rem;
             border: 3px solid #009999;
             width: calc(80%);
+            max-width: 35rem;
             background-color: #fff;
             position: relative;
             box-shadow: rgba(0, 0, 0,0.3) 10px 10px 10px 0rem;
@@ -1628,16 +1476,10 @@ $tablet-breakpoint: 1024px;
 @media only screen and (min-width: 960px) and (max-width: 1199px){
     .headerImg{
         &__container{
-            background-image: url('./img/Group\ 6.png');
-            
             height: 20rem;
-            object-fit: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
         &__img{
-            width: 100%;
+            width: 95%;
         }
     }
     .question{
@@ -1664,66 +1506,25 @@ $tablet-breakpoint: 1024px;
             order: 1;
             padding-right: 3rem;
             &--item{
-                color: #009999;
                 height: 12rem;
                 width: 17rem;
-                border: 3px solid #009999;
-                position: relative;
-                background-color: #F2F2F2;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-flow: column;
                 margin-bottom: 5rem;
-                border-radius: 1rem;
-                & > p {
-                    font-size: 1.5rem;
-                    font-weight: bold;
-                }
-                &::after{
-                    content: "";
-                    position: absolute;
-                    width: 0;
-                    height: 0;
-                    border-top: 0px solid #009999;
-                    border-bottom: 40px solid transparent;
-                    border-right: 30px solid #009999;
-                    right: 2rem;
-                    bottom: -2.5rem;
-                    
-                }
             }
         }
         &__rightCol{
             order: 2;
             &--item{
-                color: #009999;
                 height: 12rem;
                 width: 17rem;
-                border: 3px solid #009999;
-                position: relative;
-                background-color: #F2F2F2;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-flow: column;
                 margin-bottom: 5rem;
-                border-radius: 1rem;
-                & > p {
-                    font-size: 1.5rem;
-                    font-weight: bold;
-                }
-                &::after{
-                    content: "";
-                    position: absolute;
-                    width: 0;
-                    height: 0;
-                    border-top: 0px solid #009999;
-                    border-bottom: 40px solid transparent;
-                    border-left: 30px solid #009999;
-                    left: 2rem;
-                    bottom: -2.5rem;
-                }
             }
         }
         &__desc{
@@ -1816,7 +1617,7 @@ $tablet-breakpoint: 1024px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 12rem;
+                
                 width: 12rem;
                 border-radius: 25rem;
                 background-color: #009999;
@@ -1954,6 +1755,7 @@ $tablet-breakpoint: 1024px;
             padding: 2rem 0rem 2rem 0rem;
             border: 3px solid #009999;
             width: calc(80%);
+            max-width: 35rem;
             background-color: #fff;
             position: relative;
             box-shadow: rgba(0, 0, 0,0.3) 10px 10px 10px 0rem;
@@ -2168,27 +1970,6 @@ $tablet-breakpoint: 1024px;
 }
 /*  width >= 1200px and width < 1600px */
 @media only screen and (min-width: 1200px) and (max-width: 1599px){
-    .headerImg{
-        &__container{
-            background-image: url('./img/Group\ 6.png');
-            width: 100%;
-            height: 38rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        &__img{
-            width: 100%;
-        }
-    }
-    
-    .word{
-        &__green{
-            color: #009999;
-        }
-    }
-    
     .question{
         &__container{
             padding: 5rem 0;
@@ -2200,7 +1981,7 @@ $tablet-breakpoint: 1024px;
         }
         
         &__wrapper{
-            max-width: 65vw;
+            max-width: 70vw;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -2208,65 +1989,14 @@ $tablet-breakpoint: 1024px;
         }
         &__leftCol{
             &--item{
-                color: #009999;
                 height: 12rem;
                 width: 20rem;
-                border: 3px solid #009999;
-                position: relative;
-                background-color: #F2F2F2;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-flow: column;
-                margin-bottom: 5rem;
-                border-radius: 1rem;
-                & > p {
-                    font-size: 1.5rem;
-                    font-weight: bold;
-                }
-                &::after{
-                    content: "";
-                    position: absolute;
-                    width: 0;
-                    height: 0;
-                    border-top: 0px solid #009999;
-                    border-bottom: 40px solid transparent;
-                    border-right: 30px solid #009999;
-                    right: 2rem;
-                    bottom: -2.5rem;
-                    
-                }
             }
         }
         &__rightCol{
             &--item{
-                color: #009999;
                 height: 12rem;
                 width: 20rem;
-                border: 3px solid #009999;
-                position: relative;
-                background-color: #F2F2F2;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-flow: column;
-                margin-bottom: 5rem;
-                border-radius: 1rem;
-                & > p {
-                    font-size: 1.5rem;
-                    font-weight: bold;
-                }
-                &::after{
-                    content: "";
-                    position: absolute;
-                    width: 0;
-                    height: 0;
-                    border-top: 0px solid #009999;
-                    border-bottom: 40px solid transparent;
-                    border-left: 30px solid #009999;
-                    left: 2rem;
-                    bottom: -2.5rem;
-                }
             }
         }
         &__desc{
@@ -2277,7 +2007,6 @@ $tablet-breakpoint: 1024px;
             }
         }
     }
-    
     .feature{
         &__title{
             font-size: 4rem;
@@ -2371,7 +2100,7 @@ $tablet-breakpoint: 1024px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 13rem;
+                
                 width: 13rem;
                 border-radius: 25rem;
                 background-color: #009999;
@@ -2688,7 +2417,7 @@ $tablet-breakpoint: 1024px;
     
     .contact{
         &__container{
-            background-image: url('./img/Group\ 6.png');
+            background-image: url('./png/heroImg.png');
             height: 26rem;
         }
         &__layer{
