@@ -215,7 +215,8 @@
   background-color: #009999;
   border-radius: 25rem;
   top: -13%;
-  left: 33%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .flow__step > p {
   text-transform: uppercase;
@@ -717,7 +718,6 @@
     border-radius: 25rem;
     top: -13%;
     left: 50%;
-    margin-left: -4rem;
   }
   .flow__step > p {
     text-transform: uppercase;
@@ -1214,7 +1214,7 @@
     background-color: #009999;
     border-radius: 25rem;
     top: -15%;
-    left: 30%;
+    left: 50%;
   }
   .flow__step > p {
     text-transform: uppercase;
@@ -1717,7 +1717,7 @@
     background-color: #009999;
     border-radius: 25rem;
     top: -15%;
-    left: 35%;
+    left: 50%;
   }
   .flow__step > p {
     text-transform: uppercase;
@@ -2199,7 +2199,7 @@
     background-color: #009999;
     border-radius: 25rem;
     top: -14%;
-    left: 30%;
+    left: 50%;
   }
   .flow__step > p {
     text-transform: uppercase;

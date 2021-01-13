@@ -243,7 +243,8 @@ $tablet-breakpoint: 1024px;
         background-color: #009999;
         border-radius: 25rem;
         top: -13%;
-        left: 33%;
+        left: 50%;
+        transform: translateX(-50%);
         & > p {
             text-transform: uppercase;
             font-size: 1.5rem;
@@ -772,7 +773,7 @@ $tablet-breakpoint: 1024px;
             border-radius: 25rem;
             top: -13%;
             left: 50%;
-            margin-left: -4rem;
+        
             & > p {
                 text-transform: uppercase;
                 font-size: 1.5rem;
@@ -1291,7 +1292,7 @@ $tablet-breakpoint: 1024px;
             background-color: #009999;
             border-radius: 25rem;
             top: -15%;
-            left: 30%;
+            left: 50%;
             & > p {
                 text-transform: uppercase;
                 font-size: 1.3rem;
@@ -1814,7 +1815,7 @@ $tablet-breakpoint: 1024px;
             background-color: #009999;
             border-radius: 25rem;
             top: -15%;
-            left: 35%;
+            left: 50%;
             & > p {
                 text-transform: uppercase;
                 font-size: 1.3rem;
@@ -2321,7 +2322,7 @@ $tablet-breakpoint: 1024px;
             background-color: #009999;
             border-radius: 25rem;
             top: -14%;
-            left: 30%;
+            left: 50%;
             & > p {
                 text-transform: uppercase;
                 font-size: 1.5rem;
