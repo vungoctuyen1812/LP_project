@@ -301,18 +301,62 @@ $tablet-breakpoint: 1024px;
             font-size: 1.5rem;
             
         }
+        &--oneCoin{
+            padding: 5rem 2rem 3rem 2rem;
+            border: 3px solid #009999;
+            width: calc(33% - 4rem);
+            background-color: #fff;
+            position: relative;
+            box-shadow: rgba(0, 0, 0,0.3) 10px 10px 10px 0rem;
+            &:nth-child(n){
+                margin-right: 5rem;
+            }
+            &:nth-child(3n){
+                margin-right: 0;
+            }
+            & > h5 {
+                font-size: 2.5rem;
+                line-height: 1;
+            }
+            & > p {
+                padding-top: 0.55rem;
+                font-size: 1rem;
+                
+            }
+            
+
+        }
     }
+    &__custom{
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        background-color: inherit;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.3rem;
+        border: 2px solid #009999;
+        & > p {
+            margin: 0rem;
+            color: #009999;
+        }
+    }
+    
     &__price{
         font-size: 3rem;
         & > span {
             font-size: 1.8rem;
         }
+        
+        
     }
     &__name{
         color: #009999;
         font-size: 2rem;
         position: relative;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
         &:after{
             content: '';
             height: 2px;
@@ -370,7 +414,7 @@ $tablet-breakpoint: 1024px;
         align-items: center;
         border-radius: 0.5rem;
         position: relative;
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
         & > p {
             display: block;
             margin: 0;
@@ -390,7 +434,7 @@ $tablet-breakpoint: 1024px;
         }
     }
     &__specialPrice{
-        margin: 6.75rem 0;
+        margin: 2.5rem 0;
         
         font-size: 3rem;
         & > span {
@@ -779,6 +823,18 @@ $tablet-breakpoint: 1024px;
                 font-size: 1.5rem;
                 
             }
+            &--oneCoin{
+                padding: 1rem 0rem;
+                border: 3px solid rgb(0, 153, 153);
+                width: calc(80%);
+                background-color: rgb(255, 255, 255);
+                position: relative;
+                box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px 0rem;
+                margin-bottom: 5rem;
+                &:nth-child(n){
+                    margin-right: 0rem;
+                }
+            }
         }
         &__price{
             font-size: 2rem;
@@ -837,6 +893,21 @@ $tablet-breakpoint: 1024px;
                 color: #fff;
                 font-size: 1.3rem;
             }
+        }
+        &__custom{
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            background-color: inherit;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.3rem;
+            border: 2px solid #009999;
+            
         }
         &__special{
             text-align: center;
@@ -1258,7 +1329,7 @@ $tablet-breakpoint: 1024px;
         &__item{
             padding: 2rem 0rem 2rem 0rem;
             border: 3px solid #009999;
-            width: calc(80%);
+            width: calc(70%);
             max-width: 35rem;
             background-color: #fff;
             position: relative;
@@ -1274,6 +1345,18 @@ $tablet-breakpoint: 1024px;
                 color: #009999;
                 font-size: 1.5rem;
                 
+            }
+            &--oneCoin{
+                padding: 1rem 0rem;
+                border: 3px solid rgb(0, 153, 153);
+                width: calc(70%);
+                background-color: rgb(255, 255, 255);
+                position: relative;
+                box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px 0rem;
+                margin-bottom: 5rem;
+                &:nth-child(n){
+                    margin-right: 0rem;
+                }
             }
         }
         &__price{
@@ -1312,6 +1395,21 @@ $tablet-breakpoint: 1024px;
             & > span {
                 font-size: 1.5rem;
             }
+        }
+        &__custom{
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            background-color: inherit;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.3rem;
+            border: 2px solid #009999;
+            
         }
         &__question{
             text-align: center;
@@ -1755,7 +1853,7 @@ $tablet-breakpoint: 1024px;
             padding: 2rem 0rem 2rem 0rem;
             border: 3px solid #009999;
             width: calc(80%);
-            max-width: 35rem;
+            max-width: 38rem;
             background-color: #fff;
             position: relative;
             box-shadow: rgba(0, 0, 0,0.3) 10px 10px 10px 0rem;
@@ -1770,6 +1868,19 @@ $tablet-breakpoint: 1024px;
                 color: #009999;
                 font-size: 1.5rem;
                 
+            }
+            &--oneCoin{
+                padding: 2rem 0rem 2rem 0rem;
+                max-width: 38rem;
+                border: 3px solid rgb(0, 153, 153);
+                width: calc(70%);
+                background-color: rgb(255, 255, 255);
+                position: relative;
+                box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px 0rem;
+                margin-bottom: 5rem;
+                &:nth-child(n){
+                    margin-right: 0rem;
+                }
             }
         }
         &__price{
@@ -1829,6 +1940,20 @@ $tablet-breakpoint: 1024px;
                 color: #fff;
                 font-size: 1.3rem;
             }
+        }
+        &__custom{
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            background-color: inherit;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.3rem;
+            border: 2px solid #009999;
         }
         &__special{
             text-align: center;
@@ -2247,6 +2372,31 @@ $tablet-breakpoint: 1024px;
                 font-size: 1.5rem;
                 
             }
+            &--oneCoin{
+                padding: 5rem 2rem 3rem 2rem;
+                border: 3px solid #009999;
+                width: calc(33% - 4rem);
+                background-color: #fff;
+                position: relative;
+                box-shadow: rgba(0, 0, 0,0.3) 10px 10px 10px 0rem;
+                &:nth-child(n){
+                    margin-right: 5rem;
+                }
+                &:nth-child(3n){
+                    margin-right: 0;
+                }
+                & > h5 {
+                    font-size: 1.7rem;
+                    line-height: 1;
+                }
+                
+                & > p {
+                    padding-top: 0.55rem;
+                    font-size: 1rem;
+                }
+                
+    
+            }
         }
         &__price{
             font-size: 1.7rem;
@@ -2336,7 +2486,7 @@ $tablet-breakpoint: 1024px;
             }
         }
         &__specialPrice{
-            margin: 6rem 0;
+            margin: 2rem 0;
             
             font-size: 3rem;
             & > span {
