@@ -507,7 +507,7 @@
     font-size: 1.3rem;
   }
   .question__wrapper {
-    max-width: 20vh;
+    max-width: 40vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -1007,7 +1007,7 @@
     padding-top: 2rem;
   }
   .question__wrapper {
-    max-width: 35vh;
+    max-width: 55vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
