@@ -318,11 +318,15 @@ $tablet-breakpoint: 1024px;
             & > h5 {
                 font-size: 2.5rem;
                 line-height: 1;
+                font-weight: bold;
+                & > span {
+                    font-weight: normal;
+                    font-size: 1.5rem;
+                }
             }
             & > p {
                 padding-top: 0.55rem;
                 font-size: 1rem;
-                
             }
             
 
@@ -347,8 +351,10 @@ $tablet-breakpoint: 1024px;
     
     &__price{
         font-size: 3rem;
+        font-weight: bold;
         & > span {
             font-size: 1.8rem;
+            font-weight: normal;
         }
         
         
@@ -380,8 +386,10 @@ $tablet-breakpoint: 1024px;
     &__subPrice{
         margin: 0;
         font-size: 2rem;
+        font-weight: bold;
         & > span {
             font-size: 1.5rem;
+            font-weight: normal;
         }
     }
     &__question{
@@ -436,10 +444,11 @@ $tablet-breakpoint: 1024px;
     }
     &__specialPrice{
         margin: 2.5rem 0;
-        
+        font-weight: bold;
         font-size: 3rem;
         & > span {
             font-size: 1.5rem;
+            font-weight: normal;
         }
     }
     &__option{
@@ -494,8 +503,10 @@ $tablet-breakpoint: 1024px;
             font-size: 3.5rem;
             position: relative;
             margin-bottom: 3rem;
+            font-weight: bold;
             & > span {
                 font-size: 1.3rem;
+                font-weight: normal;
             
             }
             &:after{
@@ -537,7 +548,7 @@ $tablet-breakpoint: 1024px;
 }
 
 /* Mobile: width < 640px */
-@media only screen and (max-width: 640px){
+@media only screen and (min-width: 470px) and (max-width: 640px){
     .headerImg{
         &__container{
             height: 20rem;
@@ -655,7 +666,7 @@ $tablet-breakpoint: 1024px;
         &__item{
             padding: 0 1rem;
             background-color: #fff;
-            width: 16rem;
+            width: 90%;
             height: 30rem;
             display: flex;
             justify-content: center;
@@ -681,18 +692,7 @@ $tablet-breakpoint: 1024px;
                 border-radius: 25rem;
                 background-color: #009999;
             }
-            &--img1{
-                position: absolute;
-                    top: 1.7rem;
-                    left: 3.5rem;
-                    z-index: 1;
-            }
-            &--img2{
-                position: absolute;
-                    top: 6rem;
-                    left: 6.5rem;
-                    z-index: 2;
-            }
+            
             &--title{
                 color: #009999;
                 font-size: 1.2rem;
@@ -962,7 +962,7 @@ $tablet-breakpoint: 1024px;
         &__option{
             margin: 3rem 2rem 3rem 2rem;
             border: 2px solid #009999;
-            padding: 1rem 1rem 3rem 1rem;
+            padding: 1rem 1rem 1.5rem 1rem;
             background-color: #fff;
             box-shadow: rgba(0, 0, 0,0.3) 10px 10px 10px 0rem;
             &--title{
@@ -971,7 +971,7 @@ $tablet-breakpoint: 1024px;
                 align-items: center;
                 flex-flow: column;
                 position: relative;
-                margin-bottom: 5rem;
+                margin-bottom: 1.5rem;
                 padding: 0rem 2rem;
                 &:after{
                     content: '';
@@ -997,27 +997,29 @@ $tablet-breakpoint: 1024px;
             &--list{
                 padding: 0rem 0rem;
                 display: flex;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
                 flex-flow: row wrap;
             }
             &--item{
-                width: calc(90%);
+                width: calc(40%);
                 margin: 1rem 0;
                 border: 2px solid #009999;
-                padding: 1rem 2.5rem;
+                padding: 0.5rem 0.5rem;
                 background-color: #fff;
                 & > p {
+                    font-size: 0.7rem;
                     color: #009999;
                 }
             }
             &--price{
-                font-size: 2rem;
+                font-size: 1.8rem;
                 position: relative;
-                margin-bottom: 3rem;
+                margin-bottom: 1.5rem;
+                font-weight: bold;
                 & > span {
-                    font-size: 1.3rem;
-                
+                    font-size: 1.2rem;
+                    font-weight: normal;
                 }
                 &:after{
                     content: '';
@@ -1495,8 +1497,9 @@ $tablet-breakpoint: 1024px;
                 align-items: center;
                 flex-flow: column;
                 position: relative;
-                margin-bottom: 5rem;
+                margin-bottom: 2rem;
                 padding: 1rem 2rem;
+                
                 &:after{
                     content: '';
                     height: 2px;
@@ -1516,6 +1519,7 @@ $tablet-breakpoint: 1024px;
                     color: #009999;
                     font-size: 1.8rem;
                     padding-right: 0rem;
+                    
                 }
             }
             &--list{
@@ -1529,19 +1533,21 @@ $tablet-breakpoint: 1024px;
                 width: calc(45%);
                 margin: 1rem 0;
                 border: 2px solid #009999;
-                padding: 1rem 2.5rem;
+                padding: 0.5rem;
                 background-color: #fff;
+                
                 & > p {
                     color: #009999;
                 }
             }
             &--price{
+                font-weight: bold;
                 font-size: 2rem;
                 position: relative;
                 margin-bottom: 3rem;
                 & > span {
                     font-size: 1.3rem;
-                
+                    font-weight: normal;
                 }
                 &:after{
                     content: '';

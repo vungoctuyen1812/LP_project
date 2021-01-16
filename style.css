@@ -288,6 +288,11 @@
 .plan__item--oneCoin > h5 {
   font-size: 2.5rem;
   line-height: 1;
+  font-weight: bold;
+}
+.plan__item--oneCoin > h5 > span {
+  font-weight: normal;
+  font-size: 1.5rem;
 }
 .plan__item--oneCoin > p {
   padding-top: 0.55rem;
@@ -311,9 +316,11 @@
 }
 .plan__price {
   font-size: 3rem;
+  font-weight: bold;
 }
 .plan__price > span {
   font-size: 1.8rem;
+  font-weight: normal;
 }
 .plan__name {
   color: #009999;
@@ -342,9 +349,11 @@
 .plan__subPrice {
   margin: 0;
   font-size: 2rem;
+  font-weight: bold;
 }
 .plan__subPrice > span {
   font-size: 1.5rem;
+  font-weight: normal;
 }
 .plan__question {
   text-align: center;
@@ -397,10 +406,12 @@
 }
 .plan__specialPrice {
   margin: 2.5rem 0;
+  font-weight: bold;
   font-size: 3rem;
 }
 .plan__specialPrice > span {
   font-size: 1.5rem;
+  font-weight: normal;
 }
 .plan__option {
   margin-top: 5rem;
@@ -454,9 +465,11 @@
   font-size: 3.5rem;
   position: relative;
   margin-bottom: 3rem;
+  font-weight: bold;
 }
 .plan__option--price > span {
   font-size: 1.3rem;
+  font-weight: normal;
 }
 .plan__option--price:after {
   content: "";
@@ -492,7 +505,7 @@
 }
 
 /* Mobile: width < 640px */
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 470px) and (max-width: 640px) {
   .headerImg__container {
     height: 20rem;
   }
@@ -603,7 +616,7 @@
   .merit__item {
     padding: 0 1rem;
     background-color: #fff;
-    width: 16rem;
+    width: 90%;
     height: 30rem;
     display: flex;
     justify-content: center;
@@ -629,18 +642,6 @@
     width: 12rem;
     border-radius: 25rem;
     background-color: #009999;
-  }
-  .merit__item--img1 {
-    position: absolute;
-    top: 1.7rem;
-    left: 3.5rem;
-    z-index: 1;
-  }
-  .merit__item--img2 {
-    position: absolute;
-    top: 6rem;
-    left: 6.5rem;
-    z-index: 2;
   }
   .merit__item--title {
     color: #009999;
@@ -901,7 +902,7 @@
   .plan__option {
     margin: 3rem 2rem 3rem 2rem;
     border: 2px solid #009999;
-    padding: 1rem 1rem 3rem 1rem;
+    padding: 1rem 1rem 1.5rem 1rem;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px 0rem;
   }
@@ -911,7 +912,7 @@
     align-items: center;
     flex-flow: column;
     position: relative;
-    margin-bottom: 5rem;
+    margin-bottom: 1.5rem;
     padding: 0rem 2rem;
   }
   .plan__option--title:after {
@@ -936,27 +937,30 @@
   .plan__option--list {
     padding: 0rem 0rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
   }
   .plan__option--item {
-    width: calc(90%);
+    width: calc(40%);
     margin: 1rem 0;
     border: 2px solid #009999;
-    padding: 1rem 2.5rem;
+    padding: 0.5rem 0.5rem;
     background-color: #fff;
   }
   .plan__option--item > p {
+    font-size: 0.7rem;
     color: #009999;
   }
   .plan__option--price {
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: relative;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
   }
   .plan__option--price > span {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: normal;
   }
   .plan__option--price:after {
     content: "";
@@ -1413,7 +1417,7 @@
     align-items: center;
     flex-flow: column;
     position: relative;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     padding: 1rem 2rem;
   }
   .plan__option--title:after {
@@ -1446,19 +1450,21 @@
     width: calc(45%);
     margin: 1rem 0;
     border: 2px solid #009999;
-    padding: 1rem 2.5rem;
+    padding: 0.5rem;
     background-color: #fff;
   }
   .plan__option--item > p {
     color: #009999;
   }
   .plan__option--price {
+    font-weight: bold;
     font-size: 2rem;
     position: relative;
     margin-bottom: 3rem;
   }
   .plan__option--price > span {
     font-size: 1.3rem;
+    font-weight: normal;
   }
   .plan__option--price:after {
     content: "";
