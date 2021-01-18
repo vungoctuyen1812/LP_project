@@ -1010,7 +1010,7 @@ $tablet-breakpoint: 1024px;
                 padding: 0.5rem 0.5rem;
                 background-color: #fff;
                 & > p {
-                    font-size: 0.6rem;
+                    font-size: 0.7rem;
                     color: #009999;
                 }
             }
@@ -1023,7 +1023,6 @@ $tablet-breakpoint: 1024px;
                     font-size: 0.8rem;
                     font-weight: normal;
                 }
-                
                 &:after{
                     content: '';
                     height: 2px;
@@ -1051,7 +1050,7 @@ $tablet-breakpoint: 1024px;
             flex-flow: column;
             & > h5 {
                 color: #fff;
-                font-size: 0.9rem;
+                font-size: 1rem;
                 padding-bottom: 1rem;
             }
             & > img {

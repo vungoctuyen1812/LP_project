@@ -593,9 +593,9 @@ $tablet-breakpoint: 1024px;
             }
         }
         &__desc{
-            padding: 0.5rem 1rem;
-            font-size: 1rem;
-            padding-bottom: 1.5rem;
+            padding: 0 1rem;
+            font-size: 1.5rem;
+            padding-bottom: 3rem;
             & > img {
                 cursor: pointer;
                 margin: 0 0.5rem;
@@ -610,7 +610,7 @@ $tablet-breakpoint: 1024px;
     }
     .feature{
         &__title{
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             margin-bottom: 2rem;
         }
         &__container{
@@ -640,9 +640,6 @@ $tablet-breakpoint: 1024px;
             margin-top: 2rem;
             margin-bottom: 1rem;
             padding: 0 1rem;
-            & > h5 {
-                font-size: 1.2rem;
-            }
         }
         
     }
@@ -652,7 +649,7 @@ $tablet-breakpoint: 1024px;
             padding: 3rem 2rem;
         }
         &__title{
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             padding-bottom: 2rem;
         }
         &__desc{
@@ -856,7 +853,7 @@ $tablet-breakpoint: 1024px;
         }
         &__name{
             color: #009999;
-            font-size: 1.8rem;
+            font-size: 2rem;
             position: relative;
             margin-bottom: 3rem;
             &:after{
@@ -1010,20 +1007,19 @@ $tablet-breakpoint: 1024px;
                 padding: 0.5rem 0.5rem;
                 background-color: #fff;
                 & > p {
-                    font-size: 0.6rem;
+                    font-size: 0.7rem;
                     color: #009999;
                 }
             }
             &--price{
-                font-size: 1.2rem;
+                font-size: 1.8rem;
                 position: relative;
                 margin-bottom: 1.5rem;
                 font-weight: bold;
                 & > span {
-                    font-size: 0.8rem;
+                    font-size: 1.2rem;
                     font-weight: normal;
                 }
-                
                 &:after{
                     content: '';
                     height: 2px;
@@ -1051,7 +1047,7 @@ $tablet-breakpoint: 1024px;
             flex-flow: column;
             & > h5 {
                 color: #fff;
-                font-size: 0.9rem;
+                font-size: 1rem;
                 padding-bottom: 1rem;
             }
             & > img {
